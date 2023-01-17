@@ -1,0 +1,135 @@
+/*
+The CSS export should solely be used as a reference.
+For a more detailed animation export the JSON file should be used.
+*/
+#Group_24 {
+    transform: translateY(-50%);
+    animation: Group_24__x__1 0ms 0ms linear forwards, Group_24__x__2 500ms 0ms linear forwards, Group_24__opacity__1 500ms 0ms linear forwards;
+}
+
+@keyframes Group_24__x__1 {
+    from {
+        left: 70px;
+    }
+
+    to {
+        left: 70px;
+    }
+}
+@keyframes Group_24__x__2 {
+    from {
+        left: 70px;
+    }
+
+    to {
+        left: 120px;
+    }
+}
+@keyframes Group_24__opacity__1 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#Group_26 {
+    transform: translateY(-50%);
+    animation: Group_26__x__1 0ms 0ms linear forwards, Group_26__x__2 700ms 0ms linear forwards, Group_26__opacity__1 700ms 0ms linear forwards;
+}
+
+@keyframes Group_26__x__1 {
+    from {
+        left: 70px;
+    }
+
+    to {
+        left: 0.2px;
+    }
+}
+@keyframes Group_26__x__2 {
+    from {
+        left: 0.2px;
+    }
+
+    to {
+        left: 120px;
+    }
+}
+@keyframes Group_26__opacity__1 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#Group_25 {
+    transform: translateY(-50%);
+    animation: Group_25__x__1 600ms 0ms linear forwards, Group_25__opacity__1 0ms 0ms linear forwards, Group_25__opacity__2 0ms 0ms linear forwards, Group_25__opacity__3 600ms 0ms linear forwards;
+}
+
+@keyframes Group_25__x__1 {
+    from {
+        left: 70px;
+    }
+
+    to {
+        left: 120px;
+    }
+}
+@keyframes Group_25__opacity__1 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+@keyframes Group_25__opacity__2 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+@keyframes Group_25__opacity__3 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#Arrow_2 {
+    transform: translateX(-50%) translateY(-50%);
+    animation: Arrow_2__y__1 500ms 0ms ease-in forwards, Arrow_2__opacity__1 500ms 0ms linear forwards;
+}
+
+@keyframes Arrow_2__y__1 {
+    from {
+        top: 1200px;
+    }
+
+    to {
+        top: 1227.754px;
+    }
+}
+@keyframes Arrow_2__opacity__1 {
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
