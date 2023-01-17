@@ -120,8 +120,8 @@ div .col-lg-offset-2{
 }
 
 .popup_close img{
-     width: calc(13px + 1vw);
-     height: calc(13px + 1vw);
+     width: calc(13px + 0.5vw);
+     height: calc(13px + 0.5vw);
      text-align: right;
 }
 
