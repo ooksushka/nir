@@ -114,6 +114,7 @@ div .col-lg-offset-2{
 }
 
 .popup_close {
+    width: 90%;
     text-align: right;
     display: flex;
     flex-direction: row-reverse;
