@@ -336,6 +336,10 @@ div .col-lg-offset-2{
         padding: 0;
     }
 
+    .navbar-collapse {
+        margin-left: calc(30px + 20vw);
+    }
+
    
 
     .navbar-brand img{
