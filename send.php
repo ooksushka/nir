@@ -114,7 +114,7 @@ if(!$mail->send()){
 }
 
 
-header('location: index.php');
+header('location: index.html');
 
 }
 
