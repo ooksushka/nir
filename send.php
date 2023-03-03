@@ -20,7 +20,7 @@ $mail->Port   = 587;
 $mail->setFrom('xeniaalexe@mail.ru');
 $mail->addAddress("xeniaalexe@mail.ru");
 $mail->Subject = "Заявка с сайта";
-
+$meserr = " ";
 
 if(isset($_POST['send']))
 {
@@ -33,17 +33,20 @@ $form['stometolog'] = trim(htmlspecialchars($_POST['stomatolog']));
 $form['dateCall'] = trim(htmlspecialchars($_POST['dateCall']));
 $form['timeCall'] = trim(htmlspecialchars($_POST['timeCall']));
 
+if(preg_match("/[А-Яа-я]/", $form['name']) )
+{
 
     if ($form['tema'] == '2'){
         $tema = 'Запись на прием';
     }elseif ($form['tema'] == 1) {
         $tema = 'Консультация';
+    }elseif ($form['tema'] == 3) {
+        $tema = 'Другое';
     }
     else{
         $tema = 'не указана';
     }
 
-    
 
     if ($form['stometolog'] == 1) {
         $stomatolog = 'Текст1';
@@ -107,14 +110,20 @@ $form['timeCall'] = trim(htmlspecialchars($_POST['timeCall']));
 
 
 $mail->Body = $message;
-if(!$mail->send()){
-    echo 'Ошибка';
-}else{
-    echo 'Гуд';
+$mail->send();
+// if(!$mail->send()){
+//     echo 'Ошибка';
+// }else{
+//     echo 'Гуд';
+// }
+
+header('location: index.php');
+
 }
+else $meserr = 'Введите корректное имя';
 
 
-header('location: index.html');
+
 
 }
 
